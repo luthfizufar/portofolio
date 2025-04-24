@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luthfi Zufar | Frontend Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Pixel animation background -->
+    <div class="pixel-background"></div>
+    
+    <!-- Parallax Planets -->
+    <div class="parallax-planets">
+        <div class="planet planet-1"></div>
+        <div class="planet planet-2"></div>
+        <div class="planet planet-3"></div>
+        <div class="planet planet-4"></div>
+        <div class="planet planet-5"></div>
+        <div class="stars"></div>
+    </div>
+    
+    <!-- Header and Navigation -->
+    <header>
+        <div class="logo">
+            <h1>Luthfi Zufar</h1>
+            <div class="logo-underline"></div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        
+        <!-- Mobile menu toggle -->
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="content-wrapper">
+                <div class="intro-text">
+                    <h2>Frontend Developer</h2>
+                    <p>Crafting elegant digital experiences with clean code and thoughtful design.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary">View Projects</a>
+                        <a href="#contact" class="btn secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-frame">
+                        <div class="pixel-decoration"><img src="pp.png"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section with Filtering -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Project Gallery</h2>
+            
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <div class="filter-container">
+                    <input type="radio" name="filter" id="all" checked>
+                    <label for="all" class="filter-btn">All Projects</label>
+                    
+                    <input type="radio" name="filter" id="web">
+                    <label for="web" class="filter-btn">Web Development</label>
+                    
+                    <input type="radio" name="filter" id="ui">
+                    <label for="ui" class="filter-btn">UI/UX Design</label>
+                    
+                    <input type="radio" name="filter" id="mobile">
+                    <label for="mobile" class="filter-btn">Mobile</label>
+                </div>
+            </div>
+            pixel
+            <!-- Projects Gallery Grid -->
+            <div class="projects-gallery">
+                <!-- Project 1 -->
+                <div class="gallery-item" data-category="web ui">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <label for="modal-1" class="view-project">View Details</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A responsive online store with modern UI/UX principles and seamless checkout experience.</p>
+                            <div class="project-tags">
+                                <span class="tag web">Web Development</span>
+                                <span class="tag ui">UI/UX Design</span>
+                            </div>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="gallery-item" data-category="ui">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <label for="modal-2" class="view-project">View Details</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Dashboard UI Kit</h3>
+                            <p>Comprehensive UI kit for data visualization and admin interfaces with dark mode support.</p>
+                            <div class="project-tags">
+                                <span class="tag ui">UI/UX Design</span>
+                            </div>
+                            <div class="project-tech">
+                                <span>Figma</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="gallery-item" data-category="mobile">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <label for="modal-3" class="view-project">View Details</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Fitness Tracker App</h3>
+                            <p>Mobile application for tracking workouts, nutrition, and health metrics with intuitive UI.</p>
+                            <div class="project-tags">
+                                <span class="tag mobile">Mobile</span>
+                            </div>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="gallery-item" data-category="web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <label for="modal-4" class="view-project">View Details</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Template</h3>
+                            <p>Minimalist portfolio design for creative professionals with customizable sections.</p>
+                            <div class="project-tags">
+                                <span class="tag web">Web Development</span>
+                            </div>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="gallery-item" data-category="web ui">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <label for="modal-5" class="view-project">View Details</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Blog Platform</h3>
+                            <p>Content-focused blog platform with advanced typography and reading experience optimizations.</p>
+                            <div class="project-tags">
+                                <span class="tag web">Web Development</span>
+                                <span class="tag ui">UI/UX Design</span>
+                            </div>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="gallery-item" data-category="mobile ui">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <label for="modal-6" class="view-project">View Details</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Travel Companion App</h3>
+                            <p>Mobile app for travelers with itinerary planning, maps integration, and local recommendations.</p>
+                            <div class="project-tags">
+                                <span class="tag mobile">Mobile</span>
+                                <span class="tag ui">UI/UX Design</span>
+                            </div>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Profile Section -->
+        <section id="profile" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="profile-content">
+                <div class="profile-image">
+                    <div class="image-container">
+                        <div class="pixel-frame"><img src="poto.jpeg"></div>
+                    </div>
+                </div>
+                <div class="profile-text">
+                    <p>Hello! I'm <strong>Luthfi Zufar</strong>, a passionate frontend developer focused on creating beautiful, functional, and accessible web experiences.</p>
+                    <p>With a keen eye for design and a love for code, I transform ideas into elegant digital solutions that engage users and deliver results.</p>
+                    
+                    <h3>Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">HTML5</div>
+                        <div class="skill-item">CSS3</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Responsive Design</div>
+                        <div class="skill-item">UI/UX</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>luthfizufarr@gmail.com.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Bandung, Indonesia</p>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Luthfi Zufar. All rights reserved.</p>
+            <div class="pixel-decoration footer-pixels"></div>
+        </div>
+    </footer>
+    
+    <!-- Project Modals (CSS-only using checkbox hack) -->
+    
+    <!-- Modal 1: E-Commerce Platform -->
+    <input type="checkbox" id="modal-1" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>E-Commerce Platform</h3>
+                <label for="modal-1" class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+            <div class="modal-content">
+                <div class="modal-gallery">
+                    <div class="modal-image main-image"></div>
+                    <div class="modal-thumbnails">
+                        <div class="thumbnail active"></div>
+                        <div class="thumbnail"></div>
+                        <div class="thumbnail"></div>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-tags">
+                        <span class="tag web">Web Development</span>
+                        <span class="tag ui">UI/UX Design</span>
+                    </div>
+                    <div class="modal-description">
+                        <h4>Project Overview</h4>
+                        <p>A comprehensive e-commerce platform designed for modern online retailers. The platform features a responsive design, intuitive product browsing, and a streamlined checkout process to maximize conversions.</p>
+                        
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Responsive product grid with filtering and sorting options</li>
+                            <li>Product quick-view and detailed product pages</li>
+                            <li>Shopping cart with real-time updates</li>
+                            <li>Multi-step checkout process with form validation</li>
+                            <li>User account management and order history</li>
+                            <li>Dark mode and accessibility features</li>
+                        </ul>
+                        
+                        <h4>Technologies Used</h4>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>React</span>
+                            <span>Redux</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 2: Dashboard UI Kit -->
+    <input type="checkbox" id="modal-2" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Dashboard UI Kit</h3>
+                <label for="modal-2" class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+            <div class="modal-content">
+                <div class="modal-gallery">
+                    <div class="modal-image main-image dashboard-image"></div>
+                    <div class="modal-thumbnails">
+                        <div class="thumbnail active dashboard-thumb-1"></div>
+                        <div class="thumbnail dashboard-thumb-2"></div>
+                        <div class="thumbnail dashboard-thumb-3"></div>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-tags">
+                        <span class="tag ui">UI/UX Design</span>
+                    </div>
+                    <div class="modal-description">
+                        <h4>Project Overview</h4>
+                        <p>A comprehensive UI kit designed for data-heavy applications and admin dashboards. The kit includes over 50 components and templates optimized for data visualization and management interfaces.</p>
+                        
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Dark and light mode variants for all components</li>
+                            <li>Data visualization components (charts, graphs, tables)</li>
+                            <li>Form elements and validation patterns</li>
+                            <li>Navigation systems and layout templates</li>
+                            <li>Responsive design for all screen sizes</li>
+                            <li>Accessibility-focused component design</li>
+                        </ul>
+                        
+                        <h4>Technologies Used</h4>
+                        <div class="tech-stack">
+                            <span>Figma</span>
+                            <span>CSS</span>
+                            <span>Design Systems</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 3: Fitness Tracker App -->
+    <input type="checkbox" id="modal-3" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Fitness Tracker App</h3>
+                <label for="modal-3" class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+            <div class="modal-content">
+                <div class="modal-gallery">
+                    <div class="modal-image main-image fitness-image"></div>
+                    <div class="modal-thumbnails">
+                        <div class="thumbnail active fitness-thumb-1"></div>
+                        <div class="thumbnail fitness-thumb-2"></div>
+                        <div class="thumbnail fitness-thumb-3"></div>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-tags">
+                        <span class="tag mobile">Mobile</span>
+                    </div>
+                    <div class="modal-description">
+                        <h4>Project Overview</h4>
+                        <p>A mobile application designed to help users track their fitness journey, including workouts, nutrition, and health metrics. The app features an intuitive interface that makes fitness tracking simple and motivating.</p>
+                        
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Workout tracking with custom routines and exercises</li>
+                            <li>Nutrition logging and meal planning</li>
+                            <li>Progress visualization with charts and graphs</li>
+                            <li>Goal setting and achievement tracking</li>
+                            <li>Social sharing and community features</li>
+                            <li>Integration with health devices and APIs</li>
+                        </ul>
+                        
+                        <h4>Technologies Used</h4>
+                        <div class="tech-stack">
+                            <span>React Native</span>
+                            <span>CSS</span>
+                            <span>Redux</span>
+                            <span>Firebase</span>
+                            <span>Health APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 4: Portfolio Template -->
+    <input type="checkbox" id="modal-4" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Portfolio Template</h3>
+                <label for="modal-4" class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+            <div class="modal-content">
+                <div class="modal-gallery">
+                    <div class="modal-image main-image portfolio-image"></div>
+                    <div class="modal-thumbnails">
+                        <div class="thumbnail active portfolio-thumb-1"></div>
+                        <div class="thumbnail portfolio-thumb-2"></div>
+                        <div class="thumbnail portfolio-thumb-3"></div>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-tags">
+                        <span class="tag web">Web Development</span>
+                    </div>
+                    <div class="modal-description">
+                        <h4>Project Overview</h4>
+                        <p>A minimalist portfolio template designed for creative professionals to showcase their work. The template features a clean, elegant design with customizable sections and smooth animations.</p>
+                        
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Responsive design optimized for all devices</li>
+                            <li>Project showcase with filtering options</li>
+                            <li>Customizable sections for about, skills, and contact</li>
+                            <li>Smooth animations and transitions</li>
+                            <li>Contact form with validation</li>
+                            <li>SEO-friendly structure</li>
+                        </ul>
+                        
+                        <h4>Technologies Used</h4>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>SCSS</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 5: Blog Platform -->
+    <input type="checkbox" id="modal-5" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Blog Platform</h3>
+                <label for="modal-5" class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+            <div class="modal-content">
+                <div class="modal-gallery">
+                    <div class="modal-image main-image blog-image"></div>
+                    <div class="modal-thumbnails">
+                        <div class="thumbnail active blog-thumb-1"></div>
+                        <div class="thumbnail blog-thumb-2"></div>
+                        <div class="thumbnail blog-thumb-3"></div>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-tags">
+                        <span class="tag web">Web Development</span>
+                        <span class="tag ui">UI/UX Design</span>
+                    </div>
+                    <div class="modal-description">
+                        <h4>Project Overview</h4>
+                        <p>A content-focused blog platform designed to provide an exceptional reading experience. The platform features advanced typography, content organization, and a clean interface that puts the focus on the content.</p>
+                        
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Advanced typography and reading experience optimizations</li>
+                            <li>Category and tag-based content organization</li>
+                            <li>Author profiles and contributor management</li>
+                            <li>Dark mode and reading preferences</li>
+                            <li>Newsletter subscription and social sharing</li>
+                            <li>SEO and performance optimizations</li>
+                        </ul>
+                        
+                        <h4>Technologies Used</h4>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>Headless CMS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal 6: Travel Companion App -->
+    <input type="checkbox" id="modal-6" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Travel Companion App</h3>
+                <label for="modal-6" class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+            <div class="modal-content">
+                <div class="modal-gallery">
+                    <div class="modal-image main-image travel-image"></div>
+                    <div class="modal-thumbnails">
+                        <div class="thumbnail active travel-thumb-1"></div>
+                        <div class="thumbnail travel-thumb-2"></div>
+                        <div class="thumbnail travel-thumb-3"></div>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-tags">
+                        <span class="tag mobile">Mobile</span>
+                        <span class="tag ui">UI/UX Design</span>
+                    </div>
+                    <div class="modal-description">
+                        <h4>Project Overview</h4>
+                        <p>A mobile app designed for travelers to plan and manage their trips. The app includes itinerary planning, maps integration, local recommendations, and travel tips to enhance the travel experience.</p>
+                        
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Itinerary planning and management</li>
+                            <li>Interactive maps with points of interest</li>
+                            <li>Local recommendations and travel tips</li>
+                            <li>Offline access to essential information</li>
+                            <li>Travel journal and photo organization</li>
+                            <li>Weather forecasts and travel alerts</li>
+                        </ul>
+                        
+                        <h4>Technologies Used</h4>
+                        <div class="tech-stack">
+                            <span>React Native</span>
+                            <span>CSS</span>
+                            <span>Maps API</span>
+                            <span>Firebase</span>
+                            <span>Weather API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Simple parallax effect for planets
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            
+            // Apply different speeds to each planet
+            document.querySelector('.planet-1').style.transform = `translateY(${scrollPosition * 0.05}px)`;
+            document.querySelector('.planet-2').style.transform = `translateY(${scrollPosition * -0.08}px)`;
+            document.querySelector('.planet-3').style.transform = `translateY(${scrollPosition * 0.03}px) translateX(${scrollPosition * -0.02}px)`;
+            document.querySelector('.planet-4').style.transform = `translateY(${scrollPosition * -0.06}px) translateX(${scrollPosition * 0.01}px)`;
+            document.querySelector('.planet-5').style.transform = `translateY(${scrollPosition * 0.09}px) translateX(${scrollPosition * 0.04}px)`;
+        });
+    </script>
+</body>
+</html>
